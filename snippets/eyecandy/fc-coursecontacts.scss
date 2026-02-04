@@ -1,0 +1,50 @@
+/**
+ * Snippet Title: FC Course Contacts
+ * Scope:         global
+ * Goal:          eyecandy
+ * Description:   CSS for the fc-coursecontacts CSS class.
+ * Creator:       Pierre Duverneix
+ * Tested on:     Moodle 4.5, Firefox for Mac
+ * Usage note:    Activate to style the FilterCodes fc-coursecontacts class.
+ *
+ * @copyright     2026 Fondation UNIT
+ * @author        Pierre Duverneix
+ * @license       http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+.fc-coursecontacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 1rem;
+
+  li {
+    list-style: none;
+    font-weight: bold;
+
+    img {
+      max-width: 50px;
+      margin-top: 0 !important;
+      margin-right: 1rem;
+    }
+
+    .fc-coursecontactroles {
+      display: none;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 0.85rem;
+      font-weight: 100;
+      color: #646b72;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .fc-coursecontacts {
+    grid-template-columns: 1fr;
+  }
+}
