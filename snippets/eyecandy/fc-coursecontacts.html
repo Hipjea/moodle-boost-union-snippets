@@ -1,0 +1,20 @@
+<div class="card course-health-widget mb-3">
+  <div class="card-body">
+    <h6 class="card-title mb-3">Avancée dans le cours</h6>
+    <!-- Progression -->
+    <div class="mb-2">
+      <div class="text-muted mb-1">Progression</div>
+      <div class="progress" style="height: 0.5rem;">
+        <div class="progress-bar" style="width: {courseprogresspercent}%;"
+          role="progressbar" aria-valuenow="{courseprogresspercent}"
+          aria-valuemin="0" aria-valuemax="100"> </div>
+      </div>
+      <div class="text-muted mt-1">{courseprogresspercent}% complétés</div>
+    </div>
+    <hr class="my-2"><!-- Contacts -->
+    <div>
+      <div class="text-muted mb-1">Accompagnateurs</div>
+      {coursecontacts}
+    </div>
+  </div>
+</div>
